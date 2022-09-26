@@ -63,11 +63,11 @@
 
         raise {
             bindings = <
-&none  &kp F11 &kp F12 &kp F13 &kp F14 &kp F15  &kp C_PP                                                                             &trans                &none                &none     &none      &none        &none     &none
-&none  &none   &none   &none   &none   &none    &kp C_PREV                                                                           &kp C_NEXT            &none                &none     &none      &none        &none     &none
-&none  &none   &none   &none   &none   &none    &none      &kp PG_DN &kp PG_UP                                  &none &none          &kp RALT              &kp LEFT             &kp DOWN  &kp UP     &kp RIGHT    &none     &none
-&none  &none   &none   &none   &none   &none    &none      &none     &kp HOME  &none                            &none &kp LALT       &none      &none      &kp LC(LS(TAB))      &none     &none      &kp LC(TAB)  &none     &none
-&none  &none   &none   &none   &trans  &kp BSPC &kp DEL    &kp END                                                    &kp LCTRL      &kp ENTER  &kp SPACE                       &trans    &kp HOME   &kp LBKT     &kp RBKT  &kp END
+&none  &kp F11            &kp F12         &kp F13             &kp F14        &kp F15          &kp C_PP                                                                             &trans                &none                &none     &none      &none        &none     &none
+&none  &kp LC(LA(BSPC))   &kp LC(LA(Y))   &kp LC(LA(K))       &kp LC(LA(O))  &none            &kp C_PREV                                                                           &kp C_NEXT            &none                &none     &none      &none        &none     &none
+&none  &kp LC(LA(N))      &kp LC(LA(H))   &kp LC(LA(ENTER))   &kp LC(LA(L))  &kp LC(LA(M))    &none      &kp PG_DN &kp PG_UP                                  &none &none          &kp RALT              &kp LEFT             &kp DOWN  &kp UP     &kp RIGHT    &none     &none
+&none  &none              &kp LC(LA(U))   &kp LC(LA(J))       &kp LC(LA(I))  &none            &none      &none     &kp HOME  &none                            &none &kp LALT       &none      &none      &kp LC(LS(TAB))      &none     &none      &kp LC(TAB)  &none     &none
+&none  &none              &none           &none               &trans         &kp BSPC         &kp DEL    &kp END                                                    &kp LCTRL      &kp ENTER  &kp SPACE                       &trans    &kp HOME   &kp LBKT     &kp RBKT  &kp END
             >;
         };
 
