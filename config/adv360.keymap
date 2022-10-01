@@ -57,17 +57,17 @@
 &kp TAB        &kp LC(Q) &kp LC(W) &kp LC(E)  &kp LC(R) &kp LC(T)    &kp C_VOL_DN                                                    &kp C_VOL_UP          &none               &none     &none      &none       &none     &none
 &kp ESC        &kp LC(A) &kp LC(S) &kp LC(D)  &kp LC(F) &kp LC(G)    &kp LC(GRAVE) &kp PG_DN &kp PG_UP          &none  &none         &kp RALT              &kp LEFT            &kp DOWN  &kp UP     &kp RIGHT   &none     &none
 &kp LSHFT      &kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V) &kp LC(B)    &none         &none     &kp HOME  &none    &none &kp LALT       &none      &none      &kp LC(LS(TAB))     &none     &none      &kp LC(TAB) &none     &none
-&kp LCTRL      &kp LALT  &kp LALT  &kp LGUI   &trans    &kp BSPC     &kp DEL       &kp END                            &kp LCTRL      &kp ENTER  &kp SPACE                      &trans    &kp HOME   &kp LBKT    &kp RBKT  &kp END
+&kp LCTRL      &kp LALT  &kp LALT  &kp LGUI   &trans    &kp BSPC     &kp DEL       &kp END                            &kp LCTRL      &kp ENTER  &kp SPACE                      &trans    &kp HOME   &none       &none     &kp END
             >;
         };
 
         raise {
             bindings = <
-&none  &kp F11            &kp F12         &kp F13             &kp F14        &kp F15          &kp C_PP                                                                             &trans                &none                &none     &none      &none        &none     &none
-&none  &kp LC(LA(BSPC))   &kp LC(LA(Y))   &kp LC(LA(K))       &kp LC(LA(O))  &none            &kp C_PREV                                                                           &kp C_NEXT            &none                &none     &none      &none        &none     &none
-&none  &kp LC(LA(N))      &kp LC(LA(H))   &kp LC(LA(ENTER))   &kp LC(LA(L))  &kp LC(LA(M))    &none      &kp PG_DN &kp PG_UP                                  &none &none          &kp RALT              &kp LEFT             &kp DOWN  &kp UP     &kp RIGHT    &none     &none
-&none  &none              &kp LC(LA(U))   &kp LC(LA(J))       &kp LC(LA(I))  &none            &none      &none     &kp HOME  &none                            &none &kp LALT       &none      &none      &kp LC(LS(TAB))      &none     &none      &kp LC(TAB)  &none     &none
-&none  &none              &none           &none               &trans         &kp BSPC         &kp DEL    &kp END                                                    &kp LCTRL      &kp ENTER  &kp SPACE                       &trans    &kp HOME   &kp LBKT     &kp RBKT  &kp END
+&none              &kp F11            &kp F12                      &kp F13             &kp F14                 &kp F15          &kp C_PP                                                                             &trans                &none                &none     &macro_screen_prev      &macro_screen_next        &none     &none
+&macro_screen_tab  &kp LC(LA(BSPC))   &kp LC(LA(Y))                &kp LC(LA(K))       &kp LC(LA(O))           &none            &kp C_PREV                                                                           &kp C_NEXT            &none                &none     &none                   &none                     &none     &none
+&none              &kp LC(LA(N))      &kp LC(LA(H))                &kp LC(LA(ENTER))   &kp LC(LA(L))           &kp LC(LA(M))    &none      &kp PG_DN &kp PG_UP                                  &none &none          &kp RALT              &kp LEFT             &kp DOWN  &kp UP                  &kp RIGHT                 &none     &macro_screen_list
+&none              &none              &macro_screen_close_region   &kp LC(LA(J))       &macro_screen_vertical  &none            &none      &none     &kp HOME  &none                            &none &kp LALT       &none      &none      &kp LC(LS(TAB))      &none     &none                   &kp LC(TAB)               &none     &none
+&none              &none              &none                        &none               &trans                  &kp BSPC         &kp DEL    &kp END                                                    &kp LCTRL      &kp ENTER  &kp SPACE                       &trans    &kp HOME                &macro_screen_copy        &none  &kp END
             >;
         };
 
