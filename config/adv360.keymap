@@ -34,8 +34,6 @@ name: name##_macro {                      \
     bindings       = <keys>;              \
 };
 
-
-
 / {
   behaviors {
     #include "macros.dtsi"
@@ -56,21 +54,21 @@ name: name##_macro {                      \
 
         default_layer {
             bindings = <
-&kp GRAVE  &kp N1    &kp N2     &kp N3     &kp N4    &kp N5 &tog 1                                                                   &mo CONTROL   &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
+&mo KEYPAD &kp N1    &kp N2     &kp N3     &kp N4    &kp N5 &tog 1                                                                   &mo CONTROL   &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp EQUAL
 &kp TAB    &kp Q     &kp W      &kp E      &kp R     &kp T  &kp LA(O)                                                                &none         &kp Y      &kp U     &kp I      &kp O      &kp P     &kp BSLH
 &kp ESC    &kp A     &kp S      &kp D      &kp F     &kp G  &kp GRAVE        &kp PG_DN &kp PG_UP    &kp LC(T)  &kp LC(RBKT)          &kp RALT      &kp H      &kp J     &kp K      &kp L      &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z     &kp X      &kp C      &kp V     &kp B                             &kp HOME     &kp LALT                                       &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp MINUS
-&kp LCTRL  &kp LALT  &mo KEYPAD &kp LGUI   &mo LOWER                &kp BSPC &kp DEL   &kp END      &kp LCTRL  &kp ENTER  &kp SPACE                           &mo RAISE &kp LEFT   &kp LBKT   &kp RBKT  &kp RIGHT
+&kp LCTRL  &kp LALT  &kp LALT   &kp LGUI   &mo LOWER                &kp BSPC &kp DEL   &kp END      &kp LCTRL  &kp ENTER  &kp SPACE                           &mo RAISE &kp LEFT   &kp LBKT   &kp RBKT  &kp RIGHT
             >;
         };
 
         lower {
             bindings = <
-&kp LG(GRAVE)  &kp F1    &kp F2    &kp F3     &kp F4    &kp F5    &kp C_MUTE                                                      &trans        &kp F6              &kp F7    &kp F8     &kp F9      &kp F10   &none
-&kp TAB        &kp LC(Q) &kp LC(W) &kp LC(E)  &kp LC(R) &kp LC(T) &kp C_VOL_DN                                                    &kp C_VOL_UP  &none               &none     &none      &none       &none     &none
-&kp ESC        &kp LC(A) &kp LC(S) &kp LC(D)  &kp LC(F) &kp LC(G) &kp LC(GRAVE)   &kp PG_DN &kp PG_UP   &none     &none           &kp RALT      &kp LEFT            &kp DOWN  &kp UP     &kp RIGHT   &none     &none
-&kp LSHFT      &kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V) &kp LC(B)                           &kp HOME    &kp LALT                                &kp LC(LS(TAB))     &none     &none      &kp LC(TAB) &none     &none
-&kp LCTRL      &kp LALT  &kp LALT  &kp LGUI   &trans                     &kp BSPC &kp DEL   &kp END     &kp LCTRL &kp ENTER  &kp SPACE                              &trans    &kp HOME   &none       &none     &kp END
+&none     &kp F1    &kp F2    &kp F3     &kp F4    &kp F5    &kp C_MUTE                                                      &trans        &kp F6              &kp F7    &kp F8     &kp F9      &kp F10   &none
+&kp TAB   &kp LC(Q) &kp LC(W) &kp LC(E)  &kp LC(R) &kp LC(T) &kp C_VOL_DN                                                    &kp C_VOL_UP  &none               &none     &none      &none       &none     &none
+&kp ESC   &kp LC(A) &kp LC(S) &kp LC(D)  &kp LC(F) &kp LC(G) &kp LC(GRAVE)   &kp PG_DN &kp PG_UP   &none     &none           &kp RALT      &kp LEFT            &kp DOWN  &kp UP     &kp RIGHT   &none     &none
+&kp LSHFT &kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V) &kp LC(B)                           &kp HOME    &kp LALT                                &kp LC(LS(TAB))     &none     &none      &kp LC(TAB) &none     &none
+&kp LCTRL &kp LALT  &kp LALT  &kp LGUI   &trans                     &kp BSPC &kp DEL   &kp END     &kp LCTRL &kp ENTER  &kp SPACE                              &trans    &kp HOME   &none       &none     &kp END
             >;
         };
 
